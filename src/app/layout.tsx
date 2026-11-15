@@ -1,21 +1,36 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/config/site.config";
 
-const inter = Inter({
-  subsets: ["latin"],
+const inter = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/inter/files/inter-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../node_modules/@fontsource/inter/files/inter-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   variable: "--font-inter",
-  weight: ["400", "600"],
   display: "swap",
 });
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
+const playfair = localFont({
+  src: [
+    {
+      path: "../../node_modules/@fontsource/playfair-display/files/playfair-display-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   variable: "--font-playfair",
-  weight: ["600"],
   display: "swap",
 });
 
