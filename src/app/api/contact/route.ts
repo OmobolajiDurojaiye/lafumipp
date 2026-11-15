@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import { sendEmailViaSmtp } from "@/lib/smtp";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long").max(100),
@@ -117,11 +116,33 @@ export async function POST(req: NextRequest) {
       `Notice: Form disclaimed sensitive financial details (SSNs, tax returns, bank credentials).`,
     ].join("\n");
 
-    await sendEmailViaSmtp({
-      to: recipient,
-      subject: `[LAFUMIPP Inquiry] ${serviceCategory} - ${name}`,
-      text: mailText,
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (!resendApiKey) {
+      throw new Error("RESEND_API_KEY is not configured.");
+    }
+
+    const fromEmail =
+      process.env.CONTACT_FROM_EMAIL || "LAFUMIPP Website <noreply@lafumipp.com>";
+
+    const resendRes = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${resendApiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: fromEmail,
+        to: [recipient],
+        reply_to: email,
+        subject: `[LAFUMIPP Inquiry] ${serviceCategory} - ${name}`,
+        text: mailText,
+      }),
     });
+
+    if (!resendRes.ok) {
+      const errBody = await resendRes.text();
+      throw new Error(`Resend API error (${resendRes.status}): ${errBody}`);
+    }
 
     return NextResponse.json({
       success: true,
