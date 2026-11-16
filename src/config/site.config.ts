@@ -38,8 +38,8 @@ export const siteConfig: SiteConfig = {
   naics: "541611: Administrative Management and General Management Consulting Services",
   contact: {
     email: "info@lafumipp.com",
-    phone: "(667) 383-9839",
-    phoneHref: "tel:+16673839839",
+    phone: "",
+    phoneHref: "",
   },
   socials: {
     linkedin: "",

@@ -32,11 +32,6 @@ const DEFAULT_FAQ_ITEMS: FAQItem[] = [
     answer:
       "It is educational accountability coaching for goals, habits, and career progress. It is not investment, legal, or medical advice.",
   },
-  {
-    question: "Should I send sensitive files in the contact form?",
-    answer:
-      "Never send Social Security numbers, bank details, or private records through our public form. We collect those only through secure intake.",
-  },
 ];
 
 interface FAQAccordionProps {

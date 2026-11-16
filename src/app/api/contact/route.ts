@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { buildContactEmailHtml } from "@/lib/contact-email-template";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters long").max(100),
@@ -99,22 +100,35 @@ export async function POST(req: NextRequest) {
       process.env.CONTACT_RECIPIENT_EMAIL ||
       "info@lafumipp.com";
 
+    const submittedAt = new Date().toLocaleString("en-US", {
+      timeZone: "America/New_York",
+      dateStyle: "medium",
+      timeStyle: "short",
+    }) + " ET";
+
     const mailText = [
-      `New Consultation Request Submitted to LAFUMIPP, LLC`,
-      `======================================================`,
+      `New Consultation Request — LAFUMIPP, LLC`,
+      ``,
       `Name: ${name}`,
       `Email: ${email}`,
       `Phone: ${phone || "Not provided"}`,
       `Service Division: ${serviceCategory}`,
       `Preferred Contact Method: ${preferredContact}`,
-      `Submitted At: ${new Date().toISOString()}`,
-      `Client IP: ${ip}`,
-      `------------------------------------------------------`,
+      `Submitted: ${submittedAt}`,
+      ``,
       `Project / Request Description:`,
       description,
-      `======================================================`,
-      `Notice: Form disclaimed sensitive financial details (SSNs, tax returns, bank credentials).`,
     ].join("\n");
+
+    const mailHtml = buildContactEmailHtml({
+      name,
+      email,
+      phone,
+      serviceCategory,
+      preferredContact,
+      description,
+      submittedAt,
+    });
 
     const resendApiKey = process.env.RESEND_API_KEY;
     if (!resendApiKey) {
@@ -122,7 +136,7 @@ export async function POST(req: NextRequest) {
     }
 
     const fromEmail =
-      process.env.CONTACT_FROM_EMAIL || "LAFUMIPP Website <noreply@lafumipp.com>";
+      process.env.CONTACT_FROM_EMAIL || "LAFUMIPP Website <website@lafumipp.com>";
 
     const resendRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -135,6 +149,7 @@ export async function POST(req: NextRequest) {
         to: [recipient],
         reply_to: email,
         subject: `[LAFUMIPP Inquiry] ${serviceCategory} - ${name}`,
+        html: mailHtml,
         text: mailText,
       }),
     });

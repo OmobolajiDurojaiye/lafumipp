@@ -42,7 +42,9 @@ export default function ContactPage() {
               <div className="rounded-[12px] bg-[#F3F4F6] p-8">
                 <h2 className="type-h3 text-navy">Direct contact</h2>
                 <p className="mt-2 type-sm text-charcoal">
-                  Reach us by email or phone to discuss your needs.
+                  {siteConfig.contact.phone
+                    ? "Reach us by email or phone to discuss your needs."
+                    : "Reach us by email to discuss your needs."}
                 </p>
 
                 <div className="mt-6 space-y-4">
@@ -54,13 +56,15 @@ export default function ContactPage() {
                     <span>{siteConfig.contact.email}</span>
                   </a>
 
-                  <a
-                    href={siteConfig.contact.phoneHref}
-                    className="flex items-center gap-3 type-body font-semibold text-navy hover:underline"
-                  >
-                    <Icon name="phone" size={20} strokeWidth={1.5} className="shrink-0 text-navy" />
-                    <span>{siteConfig.contact.phone}</span>
-                  </a>
+                  {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
+                    <a
+                      href={siteConfig.contact.phoneHref}
+                      className="flex items-center gap-3 type-body font-semibold text-navy hover:underline"
+                    >
+                      <Icon name="phone" size={20} strokeWidth={1.5} className="shrink-0 text-navy" />
+                      <span>{siteConfig.contact.phone}</span>
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </Reveal>

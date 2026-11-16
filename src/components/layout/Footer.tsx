@@ -21,15 +21,17 @@ export function Footer() {
                   <span>{siteConfig.contact.email}</span>
                 </a>
               </li>
-              <li>
-                <a
-                  href={siteConfig.contact.phoneHref}
-                  className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white"
-                >
-                  <Icon name="phone" size={16} strokeWidth={1.5} className="shrink-0 text-gold" />
-                  <span>{siteConfig.contact.phone}</span>
-                </a>
-              </li>
+              {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
+                <li>
+                  <a
+                    href={siteConfig.contact.phoneHref}
+                    className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white"
+                  >
+                    <Icon name="phone" size={16} strokeWidth={1.5} className="shrink-0 text-gold" />
+                    <span>{siteConfig.contact.phone}</span>
+                  </a>
+                </li>
+              ) : null}
             </ul>
           </div>
 

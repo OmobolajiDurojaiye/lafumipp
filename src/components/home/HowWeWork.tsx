@@ -26,8 +26,8 @@ const DEFAULT_ITEMS: WorkStepItem[] = [
     title: "Organized records",
     body: "We keep budgets, schedules, and project files clean and easy to review.",
     icon: "document",
-    image: "/images/facilities.jpg",
-    imageAlt: "Engineer inspecting and documenting facility systems",
+    image: "/images/organized-records.jpg",
+    imageAlt: "Neatly organized project binders, budget schedules, and laptop on an office desk",
   },
   {
     title: "Honest communication",
