@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
   },
   bookingUrl: "",
   secureIntakeUrl: "",
-  founderPhoto: "/images/Mrs Adejoke.jpeg",
+  founderPhoto: "",
 };
 
 export type DivisionIcon = "project" | "facility" | "ledger" | "growth" | "home";
