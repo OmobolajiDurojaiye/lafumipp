@@ -22,16 +22,16 @@ export const metadata: Metadata = {
 };
 
 const CORE_BOOKKEEPING_ITEMS = [
-  "Monthly bookkeeping and bank and credit card reconciliation",
+  "Monthly bookkeeping and account reconciliations",
   "Accounts payable and receivable tracking",
-  "Monthly financial reports (profit & loss, balance sheet, cash flow)",
-  "Catch-up and cleanup for books that have fallen behind",
-  "Year-end organization so you're ready for tax season",
+  "Monthly P&L, balance sheet, and cash flow reports",
+  "Catch-up and cleanup for behind books",
+  "Year-end organization for tax season",
 ];
 
 const TAX_PREPARATION_ITEMS = [
   "Individual and small business tax return preparation",
-  "Organized records and documentation to make filing smooth",
+  "Organized records for smooth filing",
 ];
 
 const CONTRACTOR_ITEMS = [
@@ -40,41 +40,41 @@ const CONTRACTOR_ITEMS = [
     description: "See which jobs are actually making money.",
   },
   {
-    title: "Progress billing and pay applications",
-    description: "AIA-style billing, schedule of values, and tracking of payments.",
+    title: "Progress billing & pay apps",
+    description: "AIA-style billing, schedule of values, and payment tracking.",
   },
   {
     title: "Retainage tracking",
-    description: "Know exactly what's being held and when it's due.",
+    description: "Know what is being held and when it is due.",
   },
   {
     title: "Change order tracking",
     description: "Make sure approved changes get billed.",
   },
   {
-    title: "Work-in-progress (WIP) reporting",
-    description: "Keep an accurate picture of where every job stands financially.",
+    title: "WIP reporting",
+    description: "Keep a clear financial picture of every active job.",
   },
 ];
 
 const PROCESS_ITEMS: WorkStepItem[] = [
   {
-    title: "Review where your books stand today",
-    body: "We look at your current accounts, clean up past gaps, and identify what will make the biggest difference.",
+    title: "Review your current books",
+    body: "We assess your accounts, clean up past gaps, and prioritize what matters most.",
     icon: "document",
     image: "/images/organized-records.jpg",
     imageAlt: "Neatly organized project binders, budget schedules, and laptop on an office desk",
   },
   {
-    title: "Keep monthly books accurate and current",
-    body: "We reconcile bank and credit card accounts, track AP/AR, and deliver clear monthly P&L, balance sheet, and cash flow reports.",
+    title: "Maintain monthly accuracy",
+    body: "We reconcile accounts, track AP/AR, and deliver clear monthly financial reports.",
     icon: "ledger",
     image: "/images/bookkeeping.jpg",
     imageAlt: "Hands reviewing financial records and bookkeeping checklist at a desk",
   },
   {
     title: "Track jobs and prepare for tax season",
-    body: "For contractors and project-based firms, we track job costs, retainage, change orders, and WIP—keeping records organized year-round.",
+    body: "For contractors and project firms, we track job costs, retainage, change orders, and WIP year-round.",
     icon: "check",
     image: "/images/hero-team.jpg",
     imageAlt: "Team reviewing financial and project reports in an office meeting",
@@ -85,17 +85,17 @@ const DIVISION_FAQS: FAQItem[] = [
   {
     question: "Is LAFUMIPP a CPA firm?",
     answer:
-      "No. We provide small-business and contractor bookkeeping, monthly financial reporting, and individual and small-business tax return preparation. We do not promise tax savings or guaranteed refunds.",
+      "No. We provide small-business and contractor bookkeeping, monthly reporting, and individual and small-business tax return preparation. We do not promise tax savings or guaranteed refunds.",
   },
   {
     question: "What types of businesses do you support?",
     answer:
-      "We work with small businesses, general contractors, mechanical, electrical, and plumbing contractors, specialty trades, and other project-based businesses such as landscaping, cleaning, property services, and consulting firms.",
+      "Small businesses, general and MEP contractors, specialty trades, and project-based firms including landscaping, cleaning, property services, and consulting.",
   },
   {
     question: "Can you help if our books have fallen behind?",
     answer:
-      "Yes. We handle catch-up and cleanup for books that have fallen behind, then transition you into reliable monthly bookkeeping and year-end organization.",
+      "Yes. We handle catch-up and cleanup, then transition you into steady monthly bookkeeping.",
   },
 ];
 
@@ -103,8 +103,8 @@ export default function BookkeepingTaxPage() {
   return (
     <div>
       <PageHero
-        title="Bookkeeping & Financial Support for Small Businesses"
-        subtitle="You built your business to do the work you're good at, not to chase receipts and reconcile accounts at midnight. LAFUMIPP keeps your books accurate, current, and easy to understand, so you always know where your business stands."
+        title="Bookkeeping & Financial Support"
+        subtitle="Accurate, current, and easy-to-understand books for small businesses and contractors, without the late-night receipt chasing."
         ctaText={division.ctaText}
         ctaHref="/contact"
         image={division.image}
@@ -116,9 +116,9 @@ export default function BookkeepingTaxPage() {
         <div className="container-page">
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
             <Reveal className="lg:col-span-4">
-              <h2 className="type-h2 text-navy">Core Bookkeeping &amp; Tax Preparation</h2>
+              <h2 className="type-h2 text-navy">Core Bookkeeping &amp; Tax</h2>
               <p className="mt-4 type-lg text-charcoal">
-                Accurate books and organized records so you always know where your business stands.
+                Clean books and organized records so you always know where your business stands.
               </p>
               <div className="mt-6 border-l-2 border-gold pl-4">
                 <p className="type-sm font-semibold text-navy">Scope Notice</p>
@@ -175,18 +175,13 @@ export default function BookkeepingTaxPage() {
         <div className="container-page">
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
             <Reveal className="lg:col-span-5">
-              <h2 className="type-h2 text-navy">
-                Specialized Support for Contractors &amp; Project-Based Businesses
-              </h2>
+              <h2 className="type-h2 text-navy">Support for Contractors &amp; Project Firms</h2>
               <p className="mt-4 type-body text-charcoal">
-                If your business runs on jobs, bids, and projects, your books need to work
-                differently. Our founder spent over 15 years managing construction projects. She
-                knows how contractors get paid, where money gets lost, and what the numbers should
-                tell you.
+                Backed by 15+ years of construction project management experience, we know how
+                contractors get paid and where project margins get lost.
               </p>
               <p className="mt-4 type-body text-charcoal">
-                We work with general contractors, mechanical, electrical, and plumbing contractors,
-                specialty trades, and other project-based businesses such as landscaping, cleaning,
+                Serving general and MEP contractors, specialty trades, landscaping, cleaning,
                 property services, and consulting firms.
               </p>
             </Reveal>
@@ -215,17 +210,16 @@ export default function BookkeepingTaxPage() {
         </div>
       </section>
 
-      {/* Navy How it works accordion with image carousel */}
       <HowWeWork
         title="How it works"
-        subtitle="Clear, organized bookkeeping from your first consultation forward."
+        subtitle="Simple, organized bookkeeping from your first consultation forward."
         items={PROCESS_ITEMS}
       />
 
       <FAQAccordion items={DIVISION_FAQS} />
 
       <CtaBanner
-        title="Not sure what you need? Book a free consultation and we'll look at where your books are today and what would make the biggest difference."
+        title="Not sure what you need? Book a free consultation to review your books."
         ctaText="Book a Free Consultation"
         ctaHref="/contact"
       />

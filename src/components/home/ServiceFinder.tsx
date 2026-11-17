@@ -44,7 +44,7 @@ const FINDER_OPTIONS: FinderOption[] = [
     icon: "ledger",
     division: "Bookkeeping & Tax Preparation",
     explanation:
-      "We keep small-business and contractor books accurate, current, and tax-ready — from monthly reconciliations to job costing and WIP reporting.",
+      "We keep small-business and contractor books accurate and tax-ready, from monthly reconciliations to job costing and WIP reporting.",
     nextStep: "Book a free consultation to review where your books are today.",
     ctaText: "Book a Free Consultation",
     ctaHref: "/services/bookkeeping-and-tax-preparation",

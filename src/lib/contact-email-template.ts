@@ -34,7 +34,7 @@ export function buildContactEmailHtml(data: ContactEmailData): string {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Consultation Request — LAFUMIPP, LLC</title>
+    <title>New Consultation Request - LAFUMIPP, LLC</title>
   </head>
   <body style="margin:0;padding:0;background-color:#f3f4f6;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#263238;">
     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f3f4f6;padding:32px 16px;">

@@ -106,7 +106,7 @@ export async function POST(req: NextRequest) {
     }) + " ET";
 
     const mailText = [
-      `New Consultation Request — LAFUMIPP, LLC`,
+      `New Consultation Request - LAFUMIPP, LLC`,
       ``,
       `Name: ${name}`,
       `Email: ${email}`,

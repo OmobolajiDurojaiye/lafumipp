@@ -140,7 +140,7 @@ export const serviceDivisions: ServiceDivision[] = [
     title: "Bookkeeping & Tax Preparation",
     shortTitle: "Bookkeeping & Tax",
     summary:
-      "You built your business to do the work you're good at, not to chase receipts and reconcile accounts at midnight. LAFUMIPP keeps your books accurate, current, and easy to understand.",
+      "Accurate monthly bookkeeping, contractor job costing, and tax preparation for small businesses.",
     icon: "ledger",
     image: "/images/bookkeeping.jpg",
     imageAlt: "Hands reviewing financial records and bookkeeping checklist at a desk",
