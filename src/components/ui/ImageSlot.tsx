@@ -28,16 +28,15 @@ export function ImageSlot({ className = "aspect-[4/5] w-full" }: ImageSlotProps)
   return (
     <div
       role="img"
-      aria-label="Founder portrait placeholder"
-      className={`relative flex items-center justify-center overflow-hidden rounded-[12px] bg-[#E5E7EB] ${className}`}
+      aria-label="LAFUMIPP, LLC"
+      className={`relative flex flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#DFE3E8] border-t-4 border-t-gold bg-white p-8 shadow-sm ${className}`}
     >
       <Image
         src="/images/logo.png"
-        alt=""
+        alt="LAFUMIPP, LLC logo"
         width={255}
         height={210}
-        aria-hidden="true"
-        className="h-24 w-auto opacity-20"
+        className="h-32 w-auto sm:h-36"
       />
     </div>
   );
