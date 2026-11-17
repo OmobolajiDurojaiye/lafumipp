@@ -10,7 +10,6 @@ const contactSchema = z.object({
     "Project Management",
     "Facilities & Construction Consulting",
     "Bookkeeping & Tax Preparation",
-    "Grow with Adejoke",
     "LAFUMIPP Home Services",
     "General Inquiry",
   ]),

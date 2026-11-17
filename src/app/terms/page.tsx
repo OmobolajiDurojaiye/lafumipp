@@ -36,8 +36,7 @@ export default function TermsPage() {
             <p className="mt-3 type-body text-charcoal">
               LAFUMIPP, LLC is not a law firm or licensed trade contractor. Home
               Services coordinates referrals only, and independent providers perform all trade work
-              subject to license and insurance checks. Coaching through Grow with Adejoke is
-              educational and not investment, legal, or mental-health advice.
+              subject to license and insurance checks.
             </p>
           </div>
 

@@ -13,24 +13,17 @@ const DEFAULT_FAQ_ITEMS: FAQItem[] = [
   {
     question: "What services does LAFUMIPP, LLC offer?",
     answer:
-      "We offer four divisions: Project Management, Facilities & Construction Consulting, Grow with Adejoke, and Home Services.",
+      "We offer four divisions: Project Management, Facilities & Construction Consulting, Bookkeeping & Tax Preparation, and Home Services.",
   },
   {
     question: "Does LAFUMIPP do licensed trade work?",
     answer:
       "No. Home Services connects you with independent trade providers, subject to required license and insurance checks.",
   },
-  /*
   {
     question: "Is LAFUMIPP a CPA firm?",
     answer:
-      "No. We provide bookkeeping, reconciliations, reporting, and authorized tax preparation. We do not promise tax savings or refunds.",
-  },
-  */
-  {
-    question: "What is Grow with Adejoke?",
-    answer:
-      "It is educational accountability coaching for goals, habits, and career progress. It is not investment, legal, or medical advice.",
+      "No. We provide small-business and contractor bookkeeping, monthly financial reporting, and individual and small-business tax preparation. We do not promise tax savings or refunds.",
   },
 ];
 

@@ -78,7 +78,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     url: siteConfig.siteUrl,
     logo: `${siteConfig.siteUrl}/images/logo.png`,
     email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phone,
+    ...(siteConfig.contact.phone ? { telephone: siteConfig.contact.phone } : {}),
     address: {
       "@type": "PostalAddress",
       addressRegion: siteConfig.region,

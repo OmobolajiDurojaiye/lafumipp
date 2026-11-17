@@ -38,27 +38,16 @@ const FINDER_OPTIONS: FinderOption[] = [
     ctaText: "Request a Facility Consultation",
     ctaHref: "/services/facilities-and-construction-consulting",
   },
-  /*
   {
     id: "bookkeeping",
-    questionOption: "I need bookkeeping or tax preparation.",
+    questionOption: "I need bookkeeping, contractor job costing, or tax preparation.",
     icon: "ledger",
     division: "Bookkeeping & Tax Preparation",
-    explanation: "We handle small-business bookkeeping, reconciliations, and authorized tax preparation.",
-    nextStep: "Request a review. Never send SSNs or bank details on this site.",
-    ctaText: "Request Bookkeeping or Tax Help",
+    explanation:
+      "We keep small-business and contractor books accurate, current, and tax-ready — from monthly reconciliations to job costing and WIP reporting.",
+    nextStep: "Book a free consultation to review where your books are today.",
+    ctaText: "Book a Free Consultation",
     ctaHref: "/services/bookkeeping-and-tax-preparation",
-  },
-  */
-  {
-    id: "grow",
-    questionOption: "I want help reaching personal or career goals.",
-    icon: "growth",
-    division: "Grow with Adejoke",
-    explanation: "Educational accountability coaching for goals, time management, and career growth.",
-    nextStep: "Share your goals to start your coaching plan.",
-    ctaText: "Start Your Growth Journey",
-    ctaHref: "/services/grow-with-adejoke",
   },
   {
     id: "home-services",

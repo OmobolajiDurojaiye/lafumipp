@@ -67,16 +67,15 @@ export default function AboutPage() {
                 <h2 className="type-h2 text-navy">One dependable place to turn</h2>
                 <p className="type-body text-charcoal">
                   Adejoke holds an MBA and is a certified Project Management Professional (PMP) and
-                  Facility Management Professional (FMP).
-                  {/* She brings the same discipline to LAFUMIPP's bookkeeping services, helping small businesses keep accurate, organized records they can rely on. */}
-                  {" "}She is also the voice behind Grow with Adejoke, LAFUMIPP&apos;s accountability
-                  coaching division, where she helps people set goals, build consistent habits,
-                  and keep making progress.
+                  Facility Management Professional (FMP). She brings over 15 years of construction
+                  project management experience to LAFUMIPP&apos;s bookkeeping and financial support
+                  services, helping small businesses, contractors, and project-based firms keep
+                  accurate, organized records they can rely on.
                 </p>
                 <p className="type-body text-charcoal">
                   She founded LAFUMIPP to give clients one dependable place to turn, whether they
-                  need a project managed, a facility running better, or support reaching a personal
-                  goal.
+                  need a project managed, a facility running better, or clean, job-costed books
+                  that show where every project stands.
                 </p>
                 {/* <p className="pt-2 type-sm text-charcoal/80">NAICS {siteConfig.naics}</p> */}
               </div>

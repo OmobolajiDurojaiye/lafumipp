@@ -138,12 +138,6 @@ export function Navbar() {
             )}
           </div>
 
-          <Link
-            href="/services/grow-with-adejoke"
-            className={linkClass(pathname === "/services/grow-with-adejoke")}
-          >
-            Grow with Adejoke
-          </Link>
           <Link href="/contact" className={linkClass(pathname === "/contact")}>
             Contact
           </Link>

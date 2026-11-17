@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Contact & Request a Consultation",
   description:
-    "Request a consultation with LAFUMIPP, LLC for project management, facilities consulting, bookkeeping, accountability coaching, or home-service referrals.",
+    "Request a consultation with LAFUMIPP, LLC for project management, facilities consulting, bookkeeping & tax preparation, or home-service referrals.",
   alternates: {
     canonical: "/contact",
   },

@@ -31,23 +31,12 @@ export default function DisclaimersPage() {
             </p>
           </div>
 
-          {/*
           <div className="py-8">
-            <h2 className="type-h3 text-navy">2. Bookkeeping & Tax Preparation</h2>
+            <h2 className="type-h3 text-navy">2. Bookkeeping &amp; Tax Preparation</h2>
             <p className="mt-3 type-body text-charcoal">
-              LAFUMIPP, LLC offers small-business bookkeeping, reconciliations, reporting, cleanup,
-              and authorized tax preparation. We are not a CPA firm and do not promise tax savings
-              or guaranteed refunds. Never send SSNs, tax returns, or bank details through our
-              public contact form.
-            </p>
-          </div>
-          */}
-
-          <div className="py-8">
-            <h2 className="type-h3 text-navy">2. Grow with Adejoke Coaching</h2>
-            <p className="mt-3 type-body text-charcoal">
-              Coaching through Grow with Adejoke is educational and accountability-focused. It is
-              not individualized investment, legal, or mental-health advice or treatment.
+              LAFUMIPP, LLC offers small-business and contractor bookkeeping, reconciliations,
+              financial reporting, cleanup, and individual and small-business tax preparation. We
+              are not a CPA firm and do not promise tax savings or guaranteed refunds.
             </p>
           </div>
 

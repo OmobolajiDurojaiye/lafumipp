@@ -214,8 +214,7 @@ export function ContactForm() {
             <option value="Facilities & Construction Consulting">
               Facilities & Construction Consulting
             </option>
-            {/* <option value="Bookkeeping & Tax Preparation">Bookkeeping & Tax Preparation</option> */}
-            <option value="Grow with Adejoke">Grow with Adejoke</option>
+            <option value="Bookkeeping & Tax Preparation">Bookkeeping & Tax Preparation</option>
             <option value="LAFUMIPP Home Services">LAFUMIPP Home Services</option>
             <option value="General Inquiry">General Inquiry</option>
           </select>
