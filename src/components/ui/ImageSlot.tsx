@@ -29,7 +29,7 @@ export function ImageSlot({ className = "aspect-[4/5] w-full" }: ImageSlotProps)
     <div
       role="img"
       aria-label="LAFUMIPP, LLC"
-      className={`relative flex flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#DFE3E8] border-t-4 border-t-gold bg-white p-8 shadow-sm ${className}`}
+      className={`relative flex flex-col items-center justify-center overflow-hidden rounded-[12px] border border-[#DFE3E8] bg-white p-8 shadow-sm ${className}`}
     >
       <Image
         src="/images/logo.png"
