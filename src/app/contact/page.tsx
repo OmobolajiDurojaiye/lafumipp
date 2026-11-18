@@ -49,14 +49,12 @@ export default function ContactPage() {
                 </p>
 
                 <div className="mt-6 space-y-4">
-                  <ProtectedEmailLink className="flex items-center gap-3 type-body font-semibold text-navy hover:underline">
-                    {(email) => (
-                      <>
-                        <Icon name="mail" size={20} strokeWidth={1.5} className="shrink-0 text-navy" />
-                        <span>{email}</span>
-                      </>
-                    )}
-                  </ProtectedEmailLink>
+                  <ProtectedEmailLink
+                    showIcon
+                    iconSize={20}
+                    iconClassName="shrink-0 text-navy"
+                    className="flex items-center gap-3 type-body font-semibold text-navy hover:underline"
+                  />
 
                   {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
                     <a

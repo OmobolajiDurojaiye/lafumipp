@@ -14,14 +14,12 @@ export function Footer() {
             <h2 className="type-sm font-semibold text-white">Contact</h2>
             <ul className="mt-4 space-y-3">
               <li>
-                <ProtectedEmailLink className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white">
-                  {(email) => (
-                    <>
-                      <Icon name="mail" size={16} strokeWidth={1.5} className="shrink-0 text-gold" />
-                      <span>{email}</span>
-                    </>
-                  )}
-                </ProtectedEmailLink>
+                <ProtectedEmailLink
+                  showIcon
+                  iconSize={16}
+                  iconClassName="shrink-0 text-gold"
+                  className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white"
+                />
               </li>
               {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
                 <li>
