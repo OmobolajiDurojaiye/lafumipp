@@ -7,8 +7,15 @@ import { WorkStepItem } from "@/components/home/HowWeWork";
 const division = getDivision("facilities-and-construction-consulting");
 
 export const metadata: Metadata = {
-  title: "Facilities & Construction Consulting",
-  description: division.summary,
+  title: "Facilities & Construction Consulting in Maryland",
+  description:
+    "Building condition assessments, preventive maintenance planning, MEP systems oversight, and capital project consulting across Maryland.",
+  keywords: [
+    "facilities consulting Maryland",
+    "construction consulting Maryland",
+    "MEP building systems consulting",
+    "preventive maintenance planning Maryland",
+  ],
   alternates: {
     canonical: division.slug,
   },

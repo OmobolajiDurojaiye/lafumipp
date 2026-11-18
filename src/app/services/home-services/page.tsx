@@ -8,8 +8,14 @@ import { FAQItem } from "@/components/home/FAQAccordion";
 const division = getDivision("home-services");
 
 export const metadata: Metadata = {
-  title: "LAFUMIPP Home Services | Referral & Coordination",
-  description: division.summary,
+  title: "Home Service Referrals in Maryland | Plumbing, HVAC, Electrical & Handyman",
+  description:
+    "Reliable coordination and referrals to independent plumbing, HVAC, electrical, and handyman professionals across Maryland.",
+  keywords: [
+    "home service referrals Maryland",
+    "plumbing HVAC electrical referrals Maryland",
+    "property maintenance coordination Maryland",
+  ],
   alternates: {
     canonical: division.slug,
   },

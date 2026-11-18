@@ -11,7 +11,14 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about LAFUMIPP, LLC, a Maryland-based management, consulting, bookkeeping, and home-service referral firm.",
+    "Learn about LAFUMIPP, LLC, a Maryland-based management, facilities consulting, contractor bookkeeping, and home-service referral firm.",
+  keywords: [
+    "LAFUMIPP LLC",
+    "founder of LAFUMIPP",
+    "Adejoke Adeniran",
+    "MBA PMP FMP Maryland",
+    "Maryland project management consulting",
+  ],
   alternates: {
     canonical: "/about",
   },

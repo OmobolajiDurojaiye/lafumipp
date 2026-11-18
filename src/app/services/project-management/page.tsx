@@ -7,8 +7,15 @@ import { WorkStepItem } from "@/components/home/HowWeWork";
 const division = getDivision("project-management");
 
 export const metadata: Metadata = {
-  title: "Project Management",
-  description: division.summary,
+  title: "Construction & Operational Project Management in Maryland",
+  description:
+    "End-to-end project planning, scheduling, procurement, RFI/submittal coordination, and closeout management for Maryland businesses and construction projects.",
+  keywords: [
+    "project management Maryland",
+    "construction project management Maryland",
+    "PMP project controls Maryland",
+    "procurement and vendor coordination",
+  ],
   alternates: {
     canonical: division.slug,
   },

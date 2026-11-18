@@ -38,10 +38,24 @@ const allowIndexing = process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true";
 
 export const metadata: Metadata = {
   title: {
-    default: "LAFUMIPP, LLC | Management & Consulting in Maryland",
+    default: "LAFUMIPP, LLC | Project Management, Facilities Consulting & Contractor Bookkeeping in Maryland",
     template: "%s | LAFUMIPP, LLC",
   },
   description: siteConfig.description,
+  keywords: [
+    "LAFUMIPP",
+    "LAFUMIPP LLC",
+    "project management Maryland",
+    "construction project management Maryland",
+    "facilities consulting Maryland",
+    "MEP consulting Maryland",
+    "small business bookkeeping Maryland",
+    "contractor bookkeeping Maryland",
+    "construction job costing",
+    "WIP reporting contractors",
+    "tax preparation Maryland",
+    "home service referrals Maryland",
+  ],
   metadataBase: new URL(siteConfig.siteUrl),
   alternates: {
     canonical: "/",
@@ -73,11 +87,33 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     name: siteConfig.legalName,
     url: siteConfig.siteUrl,
     logo: `${siteConfig.siteUrl}/images/logo.png`,
+    description: siteConfig.description,
     ...(siteConfig.contact.phone ? { telephone: siteConfig.contact.phone } : {}),
+    founder: {
+      "@type": "Person",
+      name: "Adejoke Adeniran",
+      jobTitle: "Founder & Principal",
+      honorificSuffix: "MBA, PMP, FMP",
+      sameAs: ["https://www.linkedin.com/in/adejoke-a-63b5a331/"],
+    },
+    areaServed: {
+      "@type": "State",
+      name: "Maryland",
+    },
+    knowsAbout: [
+      "Construction Project Management",
+      "Facilities Management & Consulting",
+      "MEP Building Services",
+      "Small Business Bookkeeping",
+      "Contractor Job Costing & WIP Reporting",
+      "AIA Progress Billing & Retainage Tracking",
+      "Individual and Small Business Tax Preparation",
+      "Home Service Referrals",
+    ],
     address: {
       "@type": "PostalAddress",
       addressRegion: siteConfig.region,

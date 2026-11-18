@@ -11,8 +11,17 @@ import { Reveal } from "@/components/ui/Reveal";
 const division = getDivision("bookkeeping-and-tax-preparation");
 
 export const metadata: Metadata = {
-  title: "Bookkeeping & Tax Preparation",
-  description: division.summary,
+  title: "Small Business & Contractor Bookkeeping and Tax Preparation in Maryland",
+  description:
+    "Monthly bookkeeping, bank reconciliations, contractor job costing, AIA progress billing, retainage, WIP reporting, and tax preparation in Maryland.",
+  keywords: [
+    "small business bookkeeping Maryland",
+    "contractor bookkeeping Maryland",
+    "construction job costing",
+    "WIP reporting contractors",
+    "AIA progress billing bookkeeping",
+    "tax preparation Maryland",
+  ],
   alternates: {
     canonical: division.slug,
   },
