@@ -2,6 +2,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site.config";
+import { ProtectedEmailLink } from "@/components/ui/ProtectedEmailLink";
 
 export const metadata: Metadata = {
   title: "Service Disclaimers",
@@ -47,12 +48,7 @@ export default function DisclaimersPage() {
               handyman work. LAFUMIPP, LLC does not perform licensed trade work. Independent
               providers perform all trade work, subject to required license and insurance checks.
               For questions, email{" "}
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="font-semibold text-navy underline"
-              >
-                {siteConfig.contact.email}
-              </a>
+              <ProtectedEmailLink className="font-semibold text-navy underline" />
               .
             </p>
           </div>

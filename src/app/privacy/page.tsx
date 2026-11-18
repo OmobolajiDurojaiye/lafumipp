@@ -2,6 +2,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site.config";
+import { ProtectedEmailLink } from "@/components/ui/ProtectedEmailLink";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -53,12 +54,7 @@ export default function PrivacyPage() {
             <p className="mt-3 type-body text-charcoal">
               We use your contact details only to answer your inquiry and coordinate services. We do
               not sell your personal information. For privacy questions, email{" "}
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="font-semibold text-navy underline"
-              >
-                {siteConfig.contact.email}
-              </a>
+              <ProtectedEmailLink className="font-semibold text-navy underline" />
               .
             </p>
           </div>

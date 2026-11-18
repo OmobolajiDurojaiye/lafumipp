@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { serviceDivisions, siteConfig } from "@/config/site.config";
 import { Icon } from "@/components/ui/Icon";
+import { ProtectedEmailLink } from "@/components/ui/ProtectedEmailLink";
 
 export function Footer() {
   return (
@@ -13,13 +14,14 @@ export function Footer() {
             <h2 className="type-sm font-semibold text-white">Contact</h2>
             <ul className="mt-4 space-y-3">
               <li>
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white"
-                >
-                  <Icon name="mail" size={16} strokeWidth={1.5} className="shrink-0 text-gold" />
-                  <span>{siteConfig.contact.email}</span>
-                </a>
+                <ProtectedEmailLink className="inline-flex items-center gap-2.5 type-sm text-white/80 transition-colors hover:text-white">
+                  {(email) => (
+                    <>
+                      <Icon name="mail" size={16} strokeWidth={1.5} className="shrink-0 text-gold" />
+                      <span>{email}</span>
+                    </>
+                  )}
+                </ProtectedEmailLink>
               </li>
               {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
                 <li>

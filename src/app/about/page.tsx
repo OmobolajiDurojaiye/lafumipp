@@ -11,7 +11,7 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about LAFUMIPP, LLC and founder Adejoke Adeniran, MBA, PMP, FMP.",
+    "Learn about LAFUMIPP, LLC, a Maryland-based management, consulting, bookkeeping, and home-service referral firm.",
   alternates: {
     canonical: "/about",
   },
@@ -42,20 +42,19 @@ export default function AboutPage() {
               </div>
 
               <div className="space-y-4 lg:col-span-7">
-                <h2 className="type-h2 text-navy">Adejoke Adeniran, MBA, PMP, FMP</h2>
+                <h2 className="type-h2 text-navy">Built on 15+ years of operational leadership</h2>
                 <p className="type-body text-charcoal">
-                  Adejoke Adeniran, MBA, PMP, FMP, is the founder of LAFUMIPP, LLC, a
-                  Maryland-based management and consulting business. She has more than 15 years of
-                  experience in construction project management, mechanical building services,
-                  facilities management, and operational coordination, on projects in the United
-                  States and internationally.
+                  LAFUMIPP, LLC is a Maryland-based management and consulting firm built on more
+                  than 15 years of hands-on experience in construction project management,
+                  mechanical building services, facilities management, and operational coordination
+                  across the United States and internationally.
                 </p>
                 <p className="type-body text-charcoal">
-                  Her career has taken her from mechanical and MEP construction sites to contract
-                  administration and facility operations. Along the way she has managed budgets,
-                  schedules, procurement, vendors, and project documentation from planning through
-                  closeout. That hands-on background shapes how LAFUMIPP works: clear plans,
-                  organized records, honest communication, and steady follow-through.
+                  Our leadership background spans mechanical and MEP construction sites, contract
+                  administration, and facility operations, managing budgets, schedules, procurement,
+                  vendors, and project documentation from planning through closeout. That practical
+                  experience shapes how LAFUMIPP works: clear plans, organized records, honest
+                  communication, and steady follow-through.
                 </p>
               </div>
             </div>
@@ -66,16 +65,25 @@ export default function AboutPage() {
               <div className="space-y-4 lg:order-1 lg:col-span-7">
                 <h2 className="type-h2 text-navy">One dependable place to turn</h2>
                 <p className="type-body text-charcoal">
-                  Adejoke holds an MBA and is a certified Project Management Professional (PMP) and
-                  Facility Management Professional (FMP). She brings over 15 years of construction
-                  project management experience to LAFUMIPP&apos;s bookkeeping and financial support
-                  services, helping small businesses, contractors, and project-based firms keep
-                  accurate, organized records they can rely on.
+                  Led by an MBA, Project Management Professional (PMP), and Facility Management
+                  Professional (FMP), LAFUMIPP brings disciplined project controls to every
+                  engagement, including specialized bookkeeping and financial support for small
+                  businesses, contractors, and project-based firms.
                 </p>
                 <p className="type-body text-charcoal">
-                  She founded LAFUMIPP to give clients one dependable place to turn, whether they
-                  need a project managed, a facility running better, or clean, job-costed books
-                  that show where every project stands.
+                  LAFUMIPP was established to give clients one dependable place to turn, whether
+                  they need a project managed, a facility running better, or clean, job-costed
+                  books that show where every project stands.
+                </p>
+                <p className="pt-1">
+                  <a
+                    href="https://www.linkedin.com/in/adejoke-a-63b5a331/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="type-sm font-semibold text-navy underline underline-offset-4 hover:text-[#1d365c]"
+                  >
+                    Learn more about our founder
+                  </a>
                 </p>
                 {/* <p className="pt-2 type-sm text-charcoal/80">NAICS {siteConfig.naics}</p> */}
               </div>

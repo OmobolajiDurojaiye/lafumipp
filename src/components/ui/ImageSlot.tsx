@@ -16,7 +16,7 @@ export function ImageSlot({ className = "aspect-[4/5] w-full" }: ImageSlotProps)
       <div className={`relative overflow-hidden rounded-[12px] ${className}`}>
         <Image
           src={siteConfig.founderPhoto}
-          alt="Adejoke Adeniran, MBA, PMP, FMP"
+          alt="LAFUMIPP, LLC leadership"
           fill
           sizes="(min-width: 1024px) 400px, 100vw"
           className="object-cover object-top"

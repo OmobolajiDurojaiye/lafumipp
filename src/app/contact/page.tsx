@@ -5,6 +5,7 @@ import { PageHero } from "@/components/layout/PageHero";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { Icon } from "@/components/ui/Icon";
 import { Reveal } from "@/components/ui/Reveal";
+import { ProtectedEmailLink } from "@/components/ui/ProtectedEmailLink";
 
 export const metadata: Metadata = {
   title: "Contact & Request a Consultation",
@@ -48,13 +49,14 @@ export default function ContactPage() {
                 </p>
 
                 <div className="mt-6 space-y-4">
-                  <a
-                    href={`mailto:${siteConfig.contact.email}`}
-                    className="flex items-center gap-3 type-body font-semibold text-navy hover:underline"
-                  >
-                    <Icon name="mail" size={20} strokeWidth={1.5} className="shrink-0 text-navy" />
-                    <span>{siteConfig.contact.email}</span>
-                  </a>
+                  <ProtectedEmailLink className="flex items-center gap-3 type-body font-semibold text-navy hover:underline">
+                    {(email) => (
+                      <>
+                        <Icon name="mail" size={20} strokeWidth={1.5} className="shrink-0 text-navy" />
+                        <span>{email}</span>
+                      </>
+                    )}
+                  </ProtectedEmailLink>
 
                   {siteConfig.contact.phone && siteConfig.contact.phoneHref ? (
                     <a

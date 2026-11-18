@@ -20,15 +20,15 @@ export function FounderPreview() {
             </div>
 
             <div className="lg:col-span-8">
-              <h2 className="type-h2 text-navy">Adejoke Adeniran, MBA, PMP, FMP</h2>
+              <h2 className="type-h2 text-navy">Built on 15+ years of operational leadership</h2>
               <p className="mt-4 type-lg text-charcoal">
-                Adejoke Adeniran, MBA, PMP, FMP, founded LAFUMIPP after more than 15 years in
-                construction project management, mechanical building services, and facilities
-                management. She brings the same planning, organization, and follow-through to every
-                client, from project owners and facility managers to individuals working toward
-                their goals.
+                LAFUMIPP, LLC is a Maryland-based management and consulting firm built on more than
+                15 years of experience in construction project management, mechanical building
+                services, facilities management, and financial operations. We bring the same
+                planning, organization, and follow-through to every client, from project owners and
+                facility managers to small businesses and contractors.
               </p>
-              <div className="mt-7">
+              <div className="mt-7 flex flex-wrap items-center gap-6">
                 <Link
                   href="/about"
                   className="inline-flex items-center gap-2 type-sm font-semibold text-navy underline underline-offset-4 hover:text-[#1d365c]"
@@ -36,6 +36,14 @@ export function FounderPreview() {
                   <span>Learn more</span>
                   <Icon name="arrow-right" size={16} strokeWidth={1.75} />
                 </Link>
+                <a
+                  href="https://www.linkedin.com/in/adejoke-a-63b5a331/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="type-sm font-semibold text-charcoal/80 underline underline-offset-4 hover:text-navy"
+                >
+                  Learn more about our founder
+                </a>
               </div>
             </div>
           </div>

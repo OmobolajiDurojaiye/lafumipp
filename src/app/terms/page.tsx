@@ -2,6 +2,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site.config";
+import { ProtectedEmailLink } from "@/components/ui/ProtectedEmailLink";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -44,12 +45,7 @@ export default function TermsPage() {
             <h2 className="type-h3 text-navy">3. Governing Law & Contact</h2>
             <p className="mt-3 type-body text-charcoal">
               These Terms of Use follow the laws of the State of Maryland. Questions may be sent to{" "}
-              <a
-                href={`mailto:${siteConfig.contact.email}`}
-                className="font-semibold text-navy underline"
-              >
-                {siteConfig.contact.email}
-              </a>
+              <ProtectedEmailLink className="font-semibold text-navy underline" />
               .
             </p>
           </div>
