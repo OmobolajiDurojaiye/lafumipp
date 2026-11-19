@@ -68,18 +68,20 @@ export default function AboutPage() {
           <Reveal delay={60}>
             <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
               <div className="space-y-4 lg:order-1 lg:col-span-7">
-                <h2 className="type-h2 text-navy">One dependable place to turn</h2>
+                <h2 className="type-h2 text-navy">One Dependable Place to Turn</h2>
                 <p className="type-body text-charcoal">
-                  Led by an MBA, Project Management Professional (PMP), and Facility Management
-                  Professional (FMP), LAFUMIPP brings disciplined project controls to every
-                  engagement, including specialized bookkeeping and financial support for small
-                  businesses, contractors, and project-based firms.
+                  LAFUMIPP brings disciplined project controls to every engagement: managing
+                  projects, improving how facilities run, and providing specialized bookkeeping and
+                  financial support for small businesses, contractors, and project-based firms.
                 </p>
                 <p className="type-body text-charcoal">
-                  LAFUMIPP was established to give clients one dependable place to turn, whether
-                  they need a project managed, a facility running better, or clean, job-costed
-                  books that show where every project stands.
+                  We built LAFUMIPP so clients wouldn&apos;t need separate firms for separate
+                  problems. Whether you need a project delivered on time, a facility running more
+                  efficiently, or clean, job-costed books that show exactly where each project
+                  stands, you work with one accountable partner trained across business, project
+                  management, and facility management.
                 </p>
+                <p className="pt-1 type-sm tracking-wide text-charcoal/60">MBA · PMP · FMP</p>
                 {/* <p className="pt-2 type-sm text-charcoal/80">NAICS {siteConfig.naics}</p> */}
               </div>
 
