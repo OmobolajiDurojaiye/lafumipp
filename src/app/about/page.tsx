@@ -14,8 +14,6 @@ export const metadata: Metadata = {
     "Learn about LAFUMIPP, LLC, a Maryland-based management, facilities consulting, contractor bookkeeping, and home-service referral firm.",
   keywords: [
     "LAFUMIPP LLC",
-    "founder of LAFUMIPP",
-    "Adejoke Adeniran",
     "MBA PMP FMP Maryland",
     "Maryland project management consulting",
   ],
@@ -81,16 +79,6 @@ export default function AboutPage() {
                   LAFUMIPP was established to give clients one dependable place to turn, whether
                   they need a project managed, a facility running better, or clean, job-costed
                   books that show where every project stands.
-                </p>
-                <p className="pt-1">
-                  <a
-                    href="https://www.linkedin.com/in/adejoke-a-63b5a331/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="type-sm font-semibold text-navy underline underline-offset-4 hover:text-[#1d365c]"
-                  >
-                    Learn more about our founder
-                  </a>
                 </p>
                 {/* <p className="pt-2 type-sm text-charcoal/80">NAICS {siteConfig.naics}</p> */}
               </div>

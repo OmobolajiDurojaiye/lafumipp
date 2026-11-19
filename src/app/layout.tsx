@@ -93,13 +93,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     logo: `${siteConfig.siteUrl}/images/logo.png`,
     description: siteConfig.description,
     ...(siteConfig.contact.phone ? { telephone: siteConfig.contact.phone } : {}),
-    founder: {
-      "@type": "Person",
-      name: "Adejoke Adeniran",
-      jobTitle: "Founder & Principal",
-      honorificSuffix: "MBA, PMP, FMP",
-      sameAs: ["https://www.linkedin.com/in/adejoke-a-63b5a331/"],
-    },
     areaServed: {
       "@type": "State",
       name: "Maryland",

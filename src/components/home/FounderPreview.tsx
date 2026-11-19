@@ -28,7 +28,7 @@ export function FounderPreview() {
                 planning, organization, and follow-through to every client, from project owners and
                 facility managers to small businesses and contractors.
               </p>
-              <div className="mt-7 flex flex-wrap items-center gap-6">
+              <div className="mt-7">
                 <Link
                   href="/about"
                   className="inline-flex items-center gap-2 type-sm font-semibold text-navy underline underline-offset-4 hover:text-[#1d365c]"
@@ -36,14 +36,6 @@ export function FounderPreview() {
                   <span>Learn more</span>
                   <Icon name="arrow-right" size={16} strokeWidth={1.75} />
                 </Link>
-                <a
-                  href="https://www.linkedin.com/in/adejoke-a-63b5a331/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="type-sm font-semibold text-charcoal/80 underline underline-offset-4 hover:text-navy"
-                >
-                  Learn more about our founder
-                </a>
               </div>
             </div>
           </div>
